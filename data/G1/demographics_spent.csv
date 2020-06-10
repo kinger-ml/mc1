@@ -1,0 +1,765 @@
+Source,Target,Weight
+608827,Rented dwellings,21699.3
+608827,Personal insurance and pensions,15088.4
+608827,Alcohol,456.71
+608827,Water and other public services,2378.6
+608827,Groceries,5362.15
+608827,Electricity,1689.16
+608827,Lodging away from home,8444.03
+608827,Housekeeping supplies,2111.52
+608827,Telephone services,385.87
+608827,Donations,1006.36
+608827,Apparel and services,6192.98
+608827,Household operations,6393.29
+608827,Miscellaneous,2935.06
+608827,Personal care products and services,116.31
+608827,Household furnishings,4951.15
+608827,Personal taxes,19480.8
+608827,Transportation,14153.4
+608827,Mortgage payments,12677.5
+589639,Rented dwellings,25079.4
+589639,Home maintenance,9368.15
+589639,Healthcare,12000.0
+589639,Personal insurance and pensions,35981.5
+589639,Alcohol,1570.79
+589639,Water and other public services,1177.72
+589639,Groceries,6259.14
+589639,Electricity,4315.51
+589639,Lodging away from home,17326.8
+589639,Education,59222.4
+589639,Donations,6812.65
+589639,Apparel and services,7992.34
+589639,Household operations,10936.9
+589639,Miscellaneous,11748.4
+589639,Reading,922.08
+589639,Property taxes,4393.27
+589639,Household furnishings,657.25
+589639,Personal taxes,256705.0
+589639,Transportation,22255.4
+589639,Mortgage payments,20611.7
+530528,Rented dwellings,8433.51
+530528,Home maintenance,42.39
+530528,Healthcare,10454.0
+530528,Personal insurance and pensions,3256.84
+530528,Alcohol,626.25
+530528,Water and other public services,709.74
+530528,Groceries,323.75
+530528,Electricity,803.27
+530528,Education,5401.11
+530528,Restaurants,566.66
+530528,Telephone services,1055.24
+530528,Apparel and services,1263.37
+530528,Household operations,1860.01
+530528,Miscellaneous,1056.28
+530528,Reading,572.39
+530528,Property taxes,2654.76
+530528,Personal care products and services,1258.56
+530528,Household furnishings,2025.14
+530528,Personal taxes,3136.11
+635706,Rented dwellings,32074.0
+635706,Personal insurance and pensions,19509.3
+635706,Alcohol,707.75
+635706,Water and other public services,2812.2
+635706,Groceries,1346.38
+635706,Electricity,1827.44
+635706,Lodging away from home,8451.08
+635706,Housekeeping supplies,179.25
+635706,Telephone services,6537.83
+635706,Household operations,7422.71
+635706,Miscellaneous,5502.61
+635706,Reading,419.71
+635706,Household furnishings,1568.36
+635706,Personal taxes,288399.0
+635706,Transportation,12879.0
+490041,Rented dwellings,3877.78
+490041,Home maintenance,3898.0
+490041,Healthcare,3164.62
+490041,Personal insurance and pensions,3425.74
+490041,Alcohol,190.9
+490041,Water and other public services,944.51
+490041,Groceries,2351.23
+490041,Lodging away from home,3472.76
+490041,Housekeeping supplies,2016.75
+490041,Restaurants,5981.19
+490041,Apparel and services,541.23
+490041,Household operations,2715.88
+490041,Miscellaneous,1124.28
+490041,Reading,755.36
+490041,Property taxes,1088.3
+490041,Personal care products and services,1277.89
+490041,Household furnishings,546.79
+490041,Personal taxes,902.7
+490041,Transportation,989.2
+490041,Mortgage payments,309.48
+554431,Rented dwellings,8432.04
+554431,Personal insurance and pensions,4869.66
+554431,Alcohol,477.21
+554431,Water and other public services,991.31
+554431,Groceries,1022.79
+554431,Electricity,1592.45
+554431,Lodging away from home,2292.69
+554431,Housekeeping supplies,575.81
+554431,Restaurants,2100.87
+554431,Telephone services,507.66
+554431,Donations,864.5
+554431,Household operations,3608.19
+554431,Miscellaneous,11532.2
+554431,Reading,109.57
+554431,Household furnishings,2609.97
+554431,Transportation,8023.05
+554431,Mortgage payments,4588.96
+599956,Rented dwellings,15128.2
+599956,Home maintenance,2378.96
+599956,Healthcare,11521.2
+599956,Personal insurance and pensions,14199.5
+599956,Alcohol,1287.62
+599956,Water and other public services,1200.8
+599956,Groceries,5424.06
+599956,Electricity,1734.92
+599956,Lodging away from home,4308.22
+599956,Education,573.69
+599956,Housekeeping supplies,3138.12
+599956,Restaurants,2612.14
+599956,Household operations,4236.9
+599956,Miscellaneous,5658.37
+599956,Property taxes,801.56
+599956,Household furnishings,3394.47
+599956,Personal taxes,6039.55
+599956,Transportation,33836.2
+599956,Mortgage payments,4397.31
+566342,Rented dwellings,2836.39
+566342,Alcohol,239.28
+566342,Water and other public services,928.67
+566342,Groceries,2976.7
+566342,Electricity,1503.23
+566342,Lodging away from home,1392.07
+566342,Education,1673.49
+566342,Housekeeping supplies,729.47
+566342,Restaurants,695.41
+566342,Apparel and services,2325.96
+566342,Household operations,3830.14
+566342,Reading,409.84
+566342,Personal care products and services,730.67
+566342,Household furnishings,350.38
+566342,Personal taxes,201.24
+566342,Transportation,4154.76
+566342,Mortgage payments,1246.31
+548513,Rented dwellings,5458.02
+548513,Home maintenance,3302.11
+548513,Healthcare,7279.05
+548513,Personal insurance and pensions,3345.4
+548513,Alcohol,706.38
+548513,Water and other public services,2555.54
+548513,Groceries,6392.63
+548513,Lodging away from home,1499.5
+548513,Telephone services,479.26
+548513,Donations,4817.44
+548513,Reading,60.39
+548513,Property taxes,1464.26
+548513,Household furnishings,1129.58
+548513,Mortgage payments,989.89
+599057,Rented dwellings,11194.7
+599057,Home maintenance,937.43
+599057,Healthcare,1584.35
+599057,Personal insurance and pensions,4545.13
+599057,Alcohol,50.84
+599057,Water and other public services,1671.82
+599057,Groceries,151.14
+599057,Electricity,607.33
+599057,Lodging away from home,2235.21
+599057,Education,121.9
+599057,Restaurants,1013.67
+599057,Donations,1123.79
+599057,Apparel and services,2716.78
+599057,Miscellaneous,7222.34
+599057,Property taxes,2032.53
+599057,Personal care products and services,147.47
+599057,Household furnishings,5174.1
+599057,Mortgage payments,3217.81
+568093,Alcohol,423.63
+568093,Water and other public services,1351.29
+568093,Groceries,6929.54
+568093,Electricity,462.8
+568093,Lodging away from home,2057.6
+568093,Education,5152.55
+568093,Telephone services,276.35
+568093,Donations,3047.35
+568093,Apparel and services,4470.49
+568093,Miscellaneous,1230.07
+568093,Personal care products and services,55.9
+568093,Household furnishings,1626.36
+568093,Personal taxes,2087.31
+568093,Mortgage payments,1770.99
+464459,Personal insurance and pensions,1167.72
+464459,Alcohol,534.04
+464459,Water and other public services,1702.6
+464459,Groceries,2991.42
+464459,Electricity,1601.52
+464459,Education,3184.21
+464459,Housekeeping supplies,1845.19
+464459,Restaurants,1784.67
+464459,Donations,4296.71
+464459,Apparel and services,3261.55
+464459,Reading,763.63
+464459,Personal care products and services,699.42
+464459,Household furnishings,1690.82
+464459,Transportation,6587.65
+464459,Mortgage payments,5937.72
+635665,Tobacco,197.19
+635665,Personal insurance and pensions,2739.08
+635665,Alcohol,39.34
+635665,Water and other public services,1448.59
+635665,Groceries,4378.48
+635665,Education,3826.62
+635665,Housekeeping supplies,377.01
+635665,Telephone services,698.17
+635665,Household operations,1576.24
+635665,Miscellaneous,5382.42
+635665,Personal care products and services,896.83
+635665,Household furnishings,4052.61
+635665,Personal taxes,5472.26
+635665,Transportation,34041.9
+635665,Mortgage payments,461.46
+474199,Personal insurance and pensions,195.8
+474199,Alcohol,619.57
+474199,Water and other public services,199.86
+474199,Groceries,900.45
+474199,Lodging away from home,1383.94
+474199,Education,134.4
+474199,Housekeeping supplies,101.17
+474199,Telephone services,739.24
+474199,Donations,314.86
+474199,Household operations,229.05
+474199,Reading,134.02
+474199,Household furnishings,826.39
+474199,Transportation,3106.61
+475130,Alcohol,296.73
+475130,Water and other public services,464.59
+475130,Groceries,760.17
+475130,Electricity,750.34
+475130,Lodging away from home,2085.7
+475130,Education,48.06
+475130,Housekeeping supplies,227.9
+475130,Restaurants,873.6
+475130,Telephone services,606.11
+475130,Donations,923.51
+475130,Apparel and services,691.64
+475130,Household operations,233.2
+475130,Miscellaneous,1402.55
+475130,Reading,32.31
+475130,Personal care products and services,136.86
+475130,Household furnishings,1083.35
+475130,Personal taxes,598.5
+596193,Alcohol,25.88
+596193,Water and other public services,498.56
+596193,Groceries,3494.46
+596193,Electricity,215.51
+596193,Education,5715.91
+596193,Restaurants,80.41
+596193,Telephone services,114.24
+596193,Household operations,762.62
+596193,Miscellaneous,3200.76
+596193,Reading,5.5
+596193,Personal care products and services,505.63
+596193,Household furnishings,512.2
+596193,Personal taxes,1413.95
+596193,Transportation,740.74
+596193,Mortgage payments,5373.2
+576641,Personal insurance and pensions,101.93
+576641,Alcohol,57.7
+576641,Water and other public services,385.35
+576641,Groceries,1277.17
+576641,Electricity,607.0
+576641,Lodging away from home,564.31
+576641,Housekeeping supplies,276.28
+576641,Restaurants,496.73
+576641,Telephone services,480.73
+576641,Donations,878.76
+576641,Miscellaneous,1617.76
+576641,Reading,62.22
+576641,Household furnishings,349.8
+576641,Personal taxes,532.92
+576641,Transportation,367.71
+550361,Rented dwellings,2681.86
+550361,Home maintenance,1078.75
+550361,Personal insurance and pensions,2912.89
+550361,Alcohol,114.69
+550361,Water and other public services,235.5
+550361,Groceries,1135.49
+550361,Lodging away from home,2474.91
+550361,Housekeeping supplies,489.54
+550361,Restaurants,94.05
+550361,Telephone services,382.99
+550361,Donations,820.04
+550361,Household operations,201.32
+550361,Miscellaneous,1870.79
+550361,Reading,152.14
+550361,Property taxes,1378.84
+550361,Household furnishings,333.88
+550361,Personal taxes,94.43
+550361,Transportation,3691.55
+550361,Mortgage payments,626.0
+463777,Rented dwellings,583.52
+463777,Home maintenance,763.66
+463777,Healthcare,1823.5
+463777,Personal insurance and pensions,851.71
+463777,Alcohol,193.02
+463777,Water and other public services,436.8
+463777,Groceries,1409.48
+463777,Electricity,208.84
+463777,Lodging away from home,427.55
+463777,Education,4864.11
+463777,Housekeeping supplies,474.25
+463777,Restaurants,1561.97
+463777,Telephone services,316.86
+463777,Donations,693.07
+463777,Apparel and services,1471.99
+463777,Miscellaneous,1690.67
+463777,Property taxes,205.66
+463777,Personal care products and services,73.59
+463777,Household furnishings,522.83
+463777,Transportation,2870.09
+463777,Mortgage payments,4575.82
+654763,Natural gas,566.76
+654763,Rented dwellings,4412.63
+654763,Personal insurance and pensions,1941.65
+654763,Alcohol,399.58
+654763,Water and other public services,613.32
+654763,Groceries,3795.32
+654763,Electricity,511.93
+654763,Lodging away from home,2217.83
+654763,Housekeeping supplies,1069.28
+654763,Telephone services,169.61
+654763,Donations,1643.03
+654763,Household operations,50.58
+654763,Miscellaneous,1933.55
+654763,Personal care products and services,431.16
+654763,Household furnishings,81.33
+654763,Personal taxes,319.93
+654763,Transportation,568.9
+654763,Mortgage payments,1537.07
+529922,Rented dwellings,6042.72
+529922,Home maintenance,561.9
+529922,Healthcare,1056.71
+529922,Personal insurance and pensions,889.15
+529922,Alcohol,233.11
+529922,Water and other public services,388.16
+529922,Groceries,2032.07
+529922,Electricity,512.78
+529922,Lodging away from home,3011.76
+529922,Education,920.72
+529922,Restaurants,690.54
+529922,Telephone services,481.91
+529922,Donations,2047.56
+529922,Apparel and services,1647.79
+529922,Household operations,220.36
+529922,Miscellaneous,3689.19
+529922,Reading,119.01
+529922,Property taxes,1072.89
+529922,Personal care products and services,390.31
+529922,Household furnishings,1715.33
+529922,Personal taxes,7263.71
+529922,Transportation,9216.46
+529922,Mortgage payments,1790.27
+599063,Rented dwellings,2267.03
+599063,Home maintenance,1307.49
+599063,Healthcare,2061.29
+599063,Personal insurance and pensions,960.36
+599063,Alcohol,54.66
+599063,Water and other public services,414.66
+599063,Groceries,2085.13
+599063,Entertainment,1092.76
+599063,Lodging away from home,1526.12
+599063,Education,554.65
+599063,Restaurants,1346.45
+599063,Apparel and services,1443.58
+599063,Household operations,581.21
+599063,Miscellaneous,3459.56
+599063,Property taxes,2836.08
+599063,Personal care products and services,507.66
+599063,Household furnishings,2708.54
+599063,Personal taxes,3118.43
+599063,Mortgage payments,746.42
+622296,Rented dwellings,5301.05
+622296,Home maintenance,942.41
+622296,Healthcare,3331.5
+622296,Personal insurance and pensions,2796.56
+622296,Alcohol,170.12
+622296,Water and other public services,667.4
+622296,Groceries,567.63
+622296,Electricity,554.54
+622296,Lodging away from home,2927.57
+622296,Education,750.85
+622296,Donations,2215.35
+622296,Apparel and services,1981.13
+622296,Miscellaneous,2446.33
+622296,Reading,164.15
+622296,Property taxes,623.17
+622296,Personal care products and services,229.1
+622296,Household furnishings,347.59
+622296,Personal taxes,4579.47
+622296,Transportation,965.86
+622296,Mortgage payments,19.92
+512397,Tobacco,1119.13
+512397,Rented dwellings,6106.78
+512397,Home maintenance,881.23
+512397,Healthcare,4200.84
+512397,Personal insurance and pensions,4880.51
+512397,Alcohol,343.32
+512397,Water and other public services,993.54
+512397,Groceries,2840.81
+512397,Electricity,711.5
+512397,Entertainment,1254.79
+512397,Education,739.49
+512397,Housekeeping supplies,732.21
+512397,Restaurants,3252.44
+512397,Donations,6308.05
+512397,Apparel and services,321.43
+512397,Household operations,1180.66
+512397,Reading,22.79
+512397,Property taxes,1984.33
+512397,Personal care products and services,913.17
+512397,Household furnishings,4962.24
+512397,Personal taxes,4388.86
+512397,Transportation,11068.6
+512397,Mortgage payments,2487.82
+493044,Rented dwellings,5087.5
+493044,Home maintenance,1472.52
+493044,Healthcare,822.4
+493044,Personal insurance and pensions,1684.01
+493044,Alcohol,377.6
+493044,Water and other public services,224.81
+493044,Groceries,1684.21
+493044,Electricity,658.91
+493044,Housekeeping supplies,1094.45
+493044,Restaurants,75.77
+493044,Telephone services,130.79
+493044,Donations,1412.76
+493044,Household operations,125.63
+493044,Miscellaneous,2554.09
+493044,Property taxes,1702.58
+493044,Personal care products and services,45.08
+493044,Household furnishings,1858.42
+493044,Personal taxes,774.25
+493044,Transportation,7441.46
+493044,Mortgage payments,1167.94
+592414,Personal insurance and pensions,5063.82
+592414,Alcohol,576.89
+592414,Water and other public services,1265.29
+592414,Groceries,3137.79
+592414,Electricity,1107.68
+592414,Lodging away from home,5302.38
+592414,Education,1441.09
+592414,Housekeeping supplies,720.36
+592414,Restaurants,4573.48
+592414,Telephone services,483.1
+592414,Donations,2658.66
+592414,Apparel and services,3429.01
+592414,Household operations,1882.53
+592414,Miscellaneous,2522.31
+592414,Reading,243.81
+592414,Household furnishings,725.17
+575704,Alcohol,749.74
+575704,Water and other public services,2391.69
+575704,Groceries,4273.66
+575704,Entertainment,196.03
+575704,Lodging away from home,9784.56
+575704,Housekeeping supplies,1557.66
+575704,Restaurants,1911.13
+575704,Telephone services,693.04
+575704,Donations,4613.15
+575704,Miscellaneous,2660.68
+575704,Personal care products and services,849.79
+575704,Household furnishings,3479.68
+575704,Personal taxes,2255.94
+654981,Personal insurance and pensions,1787.56
+654981,Alcohol,558.05
+654981,Water and other public services,1805.45
+654981,Groceries,1269.47
+654981,Electricity,655.88
+654981,Education,5306.54
+654981,Housekeeping supplies,244.2
+654981,Restaurants,2434.08
+654981,Telephone services,386.83
+654981,Donations,986.55
+654981,Miscellaneous,586.73
+654981,Reading,499.85
+654981,Personal care products and services,620.87
+654981,Household furnishings,732.43
+654981,Personal taxes,2151.07
+575859,Personal insurance and pensions,477.89
+575859,Alcohol,132.1
+575859,Water and other public services,766.88
+575859,Groceries,366.2
+575859,Lodging away from home,1168.58
+575859,Housekeeping supplies,2274.47
+575859,Restaurants,976.38
+575859,Telephone services,779.37
+575859,Donations,2474.64
+575859,Miscellaneous,183.4
+575859,Household furnishings,440.95
+575859,Personal taxes,1543.6
+575859,Transportation,9070.65
+575859,Mortgage payments,1296.75
+640464,Personal insurance and pensions,3406.61
+640464,Alcohol,493.08
+640464,Water and other public services,2318.11
+640464,Groceries,5720.56
+640464,Electricity,1136.42
+640464,Lodging away from home,162.29
+640464,Education,7905.27
+640464,Housekeeping supplies,20.21
+640464,Restaurants,899.28
+640464,Telephone services,129.52
+640464,Donations,1315.33
+640464,Apparel and services,4161.23
+640464,Reading,426.58
+640464,Personal care products and services,422.5
+640464,Household furnishings,1259.0
+640464,Mortgage payments,3780.69
+505722,Natural gas,4118.47
+505722,Rented dwellings,34840.3
+505722,Personal insurance and pensions,62750.4
+505722,Alcohol,238.75
+505722,Water and other public services,1721.87
+505722,Groceries,6060.91
+505722,Electricity,4593.29
+505722,Lodging away from home,20056.8
+505722,Housekeeping supplies,1137.66
+505722,Telephone services,3425.98
+505722,Donations,11587.2
+505722,Apparel and services,14641.3
+505722,Household operations,11493.8
+505722,Miscellaneous,12163.6
+505722,Household furnishings,8086.96
+505722,Personal taxes,9231.82
+505722,Mortgage payments,9236.96
+517273,Rented dwellings,18476.7
+517273,Alcohol,461.18
+517273,Water and other public services,1589.03
+517273,Groceries,18128.6
+517273,Electricity,3709.53
+517273,Lodging away from home,6858.84
+517273,Education,8669.64
+517273,Restaurants,1775.55
+517273,Telephone services,286.56
+517273,Donations,8511.84
+517273,Apparel and services,5037.65
+517273,Household operations,3021.52
+517273,Miscellaneous,5355.92
+517273,Reading,436.23
+517273,Personal care products and services,2229.71
+517273,Household furnishings,1112.61
+517273,Personal taxes,20241.9
+517273,Transportation,14630.5
+517273,Mortgage payments,1370.28
+492286,Rented dwellings,12542.5
+492286,Personal insurance and pensions,14538.3
+492286,Alcohol,883.83
+492286,Water and other public services,1166.8
+492286,Groceries,2904.37
+492286,Electricity,1376.82
+492286,Housekeeping supplies,598.14
+492286,Restaurants,5422.26
+492286,Donations,5061.07
+492286,Apparel and services,7666.8
+492286,Household operations,905.48
+492286,Miscellaneous,4242.92
+492286,Reading,260.88
+492286,Personal care products and services,1609.83
+492286,Household furnishings,794.47
+492286,Personal taxes,15251.0
+492286,Transportation,39657.7
+492286,Mortgage payments,72.49
+636961,Natural gas,1323.6
+636961,Rented dwellings,3939.83
+636961,Personal insurance and pensions,2846.66
+636961,Alcohol,884.99
+636961,Water and other public services,2423.74
+636961,Groceries,375.3
+636961,Electricity,587.83
+636961,Lodging away from home,0.46
+636961,Education,450.03
+636961,Housekeeping supplies,274.65
+636961,Restaurants,3215.16
+636961,Telephone services,76.17
+636961,Donations,917.55
+636961,Household operations,5236.45
+636961,Miscellaneous,2976.51
+636961,Reading,559.3
+636961,Household furnishings,410.44
+636961,Mortgage payments,2524.68
+570411,Rented dwellings,15868.4
+570411,Home maintenance,5580.8
+570411,Healthcare,5688.59
+570411,Personal insurance and pensions,17179.0
+570411,Alcohol,574.26
+570411,Water and other public services,1991.54
+570411,Groceries,2665.72
+570411,Electricity,690.53
+570411,Education,1689.51
+570411,Telephone services,1317.79
+570411,Donations,3426.73
+570411,Miscellaneous,2200.13
+570411,Reading,578.66
+570411,Property taxes,4046.65
+570411,Household furnishings,985.43
+570411,Personal taxes,12330.7
+570411,Transportation,5599.51
+570411,Mortgage payments,2276.97
+623295,Personal insurance and pensions,699.55
+623295,Alcohol,182.71
+623295,Water and other public services,216.96
+623295,Groceries,785.52
+623295,Electricity,656.77
+623295,Lodging away from home,1949.02
+623295,Education,325.56
+623295,Housekeeping supplies,691.26
+623295,Restaurants,1906.6
+623295,Donations,802.67
+623295,Miscellaneous,1189.79
+623295,Household furnishings,1553.68
+623295,Personal taxes,1131.2
+623295,Mortgage payments,1099.51
+492777,Rented dwellings,2838.79
+492777,Personal insurance and pensions,1073.08
+492777,Alcohol,124.26
+492777,Water and other public services,360.75
+492777,Groceries,611.56
+492777,Electricity,128.47
+492777,Lodging away from home,1598.66
+492777,Telephone services,185.63
+492777,Apparel and services,535.22
+492777,Household operations,815.28
+492777,Miscellaneous,1619.79
+492777,Reading,146.65
+492777,Personal care products and services,147.32
+492777,Household furnishings,1461.98
+492777,Transportation,6491.57
+492777,Mortgage payments,1518.45
+629717,Rented dwellings,4249.15
+629717,Personal insurance and pensions,2015.43
+629717,Alcohol,73.2
+629717,Water and other public services,889.2
+629717,Groceries,2575.65
+629717,Electricity,312.96
+629717,Lodging away from home,2726.24
+629717,Education,1563.82
+629717,Restaurants,654.51
+629717,Telephone services,245.42
+629717,Apparel and services,2484.21
+629717,Household operations,192.93
+629717,Miscellaneous,1856.92
+629717,Personal care products and services,281.98
+629717,Household furnishings,478.91
+629717,Personal taxes,843.46
+629717,Transportation,4168.46
+629717,Mortgage payments,296.54
+502591,Rented dwellings,4144.78
+502591,Home maintenance,1101.4
+502591,Healthcare,4874.08
+502591,Personal insurance and pensions,536.87
+502591,Alcohol,768.82
+502591,Water and other public services,382.45
+502591,Groceries,4093.29
+502591,Electricity,631.99
+502591,Education,1369.2
+502591,Housekeeping supplies,1399.54
+502591,Restaurants,266.52
+502591,Donations,2099.77
+502591,Apparel and services,2810.98
+502591,Miscellaneous,5503.51
+502591,Reading,218.21
+502591,Property taxes,814.8
+502591,Personal care products and services,488.63
+502591,Household furnishings,669.18
+502591,Personal taxes,9247.45
+502591,Mortgage payments,2572.76
+569820,Tobacco,273.24
+569820,Rented dwellings,8464.39
+569820,Personal insurance and pensions,2942.39
+569820,Alcohol,87.4
+569820,Water and other public services,629.72
+569820,Groceries,3574.6
+569820,Electricity,808.95
+569820,Entertainment,534.52
+569820,Lodging away from home,5383.92
+569820,Housekeeping supplies,647.27
+569820,Restaurants,3093.55
+569820,Telephone services,2682.75
+569820,Donations,2875.99
+569820,Household operations,1345.06
+569820,Miscellaneous,3718.44
+569820,Reading,604.29
+569820,Personal care products and services,1512.55
+569820,Household furnishings,97.31
+569820,Personal taxes,73919.0
+569820,Transportation,7133.86
+569820,Mortgage payments,6704.79
+591682,Tobacco,1502.74
+591682,Rented dwellings,5662.73
+591682,Home maintenance,678.13
+591682,Healthcare,986.71
+591682,Alcohol,218.03
+591682,Water and other public services,622.49
+591682,Groceries,3245.92
+591682,Electricity,946.77
+591682,Lodging away from home,1180.7
+591682,Housekeeping supplies,712.92
+591682,Restaurants,2053.41
+591682,Telephone services,220.8
+591682,Donations,2019.74
+591682,Apparel and services,943.81
+591682,Household operations,599.59
+591682,Property taxes,1694.31
+591682,Personal care products and services,806.75
+591682,Household furnishings,2644.97
+591682,Personal taxes,6090.91
+591682,Transportation,4091.49
+591682,Mortgage payments,137.73
+632150,Rented dwellings,4811.33
+632150,Alcohol,303.25
+632150,Water and other public services,790.06
+632150,Groceries,1224.3
+632150,Electricity,658.42
+632150,Lodging away from home,2231.39
+632150,Restaurants,1608.67
+632150,Telephone services,915.47
+632150,Donations,1996.2
+632150,Apparel and services,1118.52
+632150,Miscellaneous,822.59
+632150,Household furnishings,1302.15
+632150,Personal taxes,3720.79
+632150,Mortgage payments,803.32
+616050,Rented dwellings,6218.94
+616050,Home maintenance,540.85
+616050,Personal insurance and pensions,9865.87
+616050,Alcohol,142.08
+616050,Water and other public services,510.26
+616050,Groceries,3407.94
+616050,Electricity,824.91
+616050,Lodging away from home,2521.46
+616050,Restaurants,1136.81
+616050,Donations,4913.07
+616050,Miscellaneous,2707.57
+616050,Property taxes,1036.27
+616050,Personal care products and services,360.95
+616050,Household furnishings,821.76
+616050,Personal taxes,8076.13
+616050,Transportation,7832.08
+616050,Mortgage payments,1670.72
+533140,Rented dwellings,3150.22
+533140,Personal insurance and pensions,534.56
+533140,Alcohol,96.46
+533140,Water and other public services,279.66
+533140,Groceries,1314.31
+533140,Electricity,507.01
+533140,Education,530.6
+533140,Housekeeping supplies,497.08
+533140,Apparel and services,239.94
+533140,Household operations,1131.24
+533140,Miscellaneous,1741.49
+533140,Reading,85.16
+533140,Personal care products and services,290.73
+533140,Household furnishings,1516.94
+533140,Personal taxes,333.78

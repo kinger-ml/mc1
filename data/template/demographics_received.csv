@@ -1,0 +1,64 @@
+Source,Target,Weight
+2,Gifts,600
+2,Money income before taxes,40000
+27,Gifts,1000
+27,Money income before taxes,50000
+29,Money income before taxes,30000
+31,Money income before taxes,9000
+33,Gifts,400
+33,Money income before taxes,40000
+34,Money income before taxes,10000
+35,Money income before taxes,40000
+36,Gifts,1000
+36,Money income before taxes,10000
+36,Personal taxes,700
+37,Money income before taxes,20000
+37,Personal taxes,800
+38,Gifts,70
+38,Money income before taxes,20000
+38,Personal taxes,400
+39,Money income before taxes,5000
+40,Gifts,800
+40,Money income before taxes,10000
+40,Personal taxes,300
+41,Gifts,300
+41,Money income before taxes,9000
+42,Money income before taxes,10000
+43,Gifts,20
+43,Money income before taxes,10000
+44,Money income before taxes,200000
+45,Gifts,4000
+45,Money income before taxes,40000
+46,Money income before taxes,30000
+47,Money income before taxes,10000
+48,Money income before taxes,40000
+49,Gifts,1000
+49,Money income before taxes,40000
+52,Money income before taxes,50000
+53,Money income before taxes,50000
+53,Personal taxes,7000
+54,Gifts,4000
+54,Money income before taxes,30000
+55,Gifts,4000
+55,Money income before taxes,30000
+55,Personal taxes,2000
+56,Money income before taxes,30000
+57,Money income before taxes,20000
+57,Personal taxes,200000
+58,Gifts,100
+58,Money income before taxes,3000
+59,Money income before taxes,5000
+60,Gifts,200
+60,Money income before taxes,3000
+60,Personal taxes,200
+61,Gifts,400
+61,Money income before taxes,4000
+62,Gifts,400
+62,Money income before taxes,10000
+63,Money income before taxes,100000
+63,Personal taxes,20000
+64,Gifts,1000
+64,Money income before taxes,20000
+65,Gifts,300
+65,Money income before taxes,10000
+0,Money income before taxes,20000
