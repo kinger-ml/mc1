@@ -7,41 +7,22 @@ Created on Mon May 25 19:59:10 2020
 import dash_html_components as html
 import dash_core_components as dcc
 from transaction_plot import transactions_graph
+from assets.html_components import dropdown_graphs, dropdown_seeds, div_transactions, div_statistics
+from stats_plot import getStatsPlot
 def tab1():
     return html.Div([
-                html.Div([ 
-                    dcc.Dropdown(
-                        id='graph_name',
-                        options=[
-                                {'label': 'Template Graph', 'value': 'data/template/'},
-                                {'label': 'Subgraph 1', 'value': 'data/G1/'},
-                                {'label': 'Subgraph 2', 'value': 'data/G2/'},
-                                {'label': 'Subgraph 3', 'value': 'data/G3/'},
-                                {'label': 'Subgraph 4', 'value': 'data/G4/'},
-                                {'label': 'Subgraph 5', 'value': 'data/G5/'},
-                                {'label': 'LARGE GRAPH', 'value': 'data/all/'},
-                                ],
-                        value='data/template/'
-                        )],style={'width': '50%','display':'inline-block'}),
-    
+                div_transactions(),
                 html.Div([
-                        dcc.Dropdown(
-                            id='person',
-                            options=[
-                                    {'label': '0', 'value': '0'}, {'label': '1', 'value': '1'},
-                                    {'label': '2', 'value': '2'}, {'label': '3', 'value': '3'},
-                                    {'label': '4', 'value': '4'}, {'label': '5', 'value': '5'},
-                                    {'label': '6', 'value': '6'}, {'label': '7', 'value': '7'},
-                                    {'label': '8', 'value': '8'}, {'label': '9', 'value': '9'}
-                                    ],
-                            value='0'
-                        )
-                    ], style={'width': '50%','display':'inline-block', 'float': 'right'}),
-                 html.Div([
-                         dcc.Graph(id='transaction', figure=transactions_graph('data/template/'))
-                         ])
-                
-        ])
+                     dcc.Graph(id='transaction', figure=transactions_graph('data/template/'))
+                     ]),
+                div_statistics(),
+                html.Div([
+                     dcc.Graph(id='call_statistics', figure=getStatsPlot('data/template/', 'calls'))
+                     ]),
+                html.Div([
+                     dcc.Graph(id='email_statistics', figure=getStatsPlot('data/template/', 'emails'))
+                     ])
+                ])
 
 def tab2():
     return html.Div([
