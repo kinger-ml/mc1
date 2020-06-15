@@ -11,7 +11,9 @@ import dash_core_components as dcc
 from dash.dependencies import Input, Output
 from tabs import tab1, tab2, tab3
 from transaction_plot import transactions_graph
-from stats_plot import getStatsPlot
+from stats_plot import statsPlot
+from coauthors_plot import coauthors_plot
+from demographics_plot import demographics_spent, demographics_received
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -20,7 +22,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 app.layout = html.Div([
     dcc.Tabs(id='tabs_top', value='tab-1', children=[
         dcc.Tab(label='Transactions', value='tab-1'),
-        dcc.Tab(label='Stats and Demographics', value='tab-2'),
+        dcc.Tab(label='Statistics', value='tab-2'),
         dcc.Tab(label='Pattern Matching', value='tab-3'),
     ]),
     html.Div(id='tabs_content')
@@ -36,17 +38,23 @@ def render_content(tab):
     elif tab == 'tab-3':
         return tab3()
     
-@app.callback([Output(component_id='seeds', component_property='style'),
-              Output('transaction', 'figure'),
-              Output('call_statistics', 'figure'),
-              Output('email_statistics', 'figure')],
+@app.callback([Output('transaction', 'figure'),
+              Output('coauthors', 'figure'),
+              Output('dem_spend', 'figure'),
+              Output('dem_rec', 'figure')],
               [Input(component_id='graph_name', component_property='value')])
 
-def show_hide_element(graph_value):
-    if graph_value == 'data/large/':
-        return {'height': '25px','width': '80%','display':'inline-block'}, transactions_graph('data/template/'), getStatsPlot('data/template/', 'calls')
-    else:
-        return {'display':'none'}, transactions_graph(graph_value), getStatsPlot(graph_value, 'calls'), getStatsPlot(graph_value, 'emails')
+def tab1_updates(graph_value):
+    return transactions_graph(graph_value), coauthors_plot(graph_value), demographics_spent(graph_value), demographics_received(graph_value)
+
+
+@app.callback(Output('statistics', 'figure'),
+              [Input(component_id='graph_name2', component_property='value'),
+               Input(component_id='channel', component_property='value'),
+               Input(component_id='charts', component_property='value')])
+
+def tab2_updates(graph_value, channel, charts):
+    return statsPlot(graph_value, channel, charts)
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
