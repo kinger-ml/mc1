@@ -14,6 +14,7 @@ from transaction_plot import transactions_graph
 from stats_plot import statsPlot
 from coauthors_plot import coauthors_plot
 from demographics_plot import demographics_spent, demographics_received
+from matching_plots import getGraph
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -55,6 +56,16 @@ def tab1_updates(graph_value):
 
 def tab2_updates(graph_value, channel, charts):
     return statsPlot(graph_value, channel, charts)
+
+@app.callback([Output('tempgraph', 'figure'),
+               Output('subgraph', 'figure')],
+              [Input(component_id='graph_name_match', component_property='value'),
+               Input(component_id='chart_name_match', component_property='value')])
+
+def tab3_updates(graph_value, charts):
+    fig1 = getGraph('data/template/', charts)
+    fig2 = getGraph(graph_value, charts)
+    return fig1, fig2
 
 if __name__ == '__main__':
     app.run_server(debug=False)

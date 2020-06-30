@@ -8,10 +8,11 @@ import dash_html_components as html
 import dash_core_components as dcc
 from transaction_plot import transactions_graph
 from assets.html_components import div_transactions, div_coauthors, div_demographics
-from assets.html_components import div_statistics
+from assets.html_components import div_statistics, tab3_left
 from coauthors_plot import coauthors_plot
 from stats_plot import statsPlot
 from demographics_plot import demographics_spent, demographics_received
+from matching_plots import transaction
 def tab1():
     return html.Div([
                 div_transactions(),
@@ -40,37 +41,20 @@ def tab2():
             ])
 
 def tab3():
-    fig1 = transactions_graph('data/template/')
-    fig1.update_xaxes(rangeslider_visible=False)
-    fig1.update_layout(
-            legend_orientation="v",
-            height=400,
-            margin=dict(
-                        l=50,
-                        r=50,
-                        b=1,
-                        t=10,
-                        pad=4
-                        )
-            
-    )
-    fig2 = transactions_graph('data/G1/')
-    fig2.update_xaxes(rangeslider_visible=False)
-    fig2.update_layout(
-            legend_orientation="v",
-            height=400,
-            margin=dict(
-                        l=50,
-                        r=50,
-                        b=10,
-                        t=10,
-                        pad=4
-                        )
-    )
     return html.Div([
-            dcc.Graph(figure=fig1),
-            dcc.Graph(figure=fig2),
-        ])
+                html.Div([
+                        tab3_left()
+                        ],style={'width': '22%', 'height': '800px', 'display':'inline-block', 
+                    'backgroundColor': 'rgba(105, 105, 105, 0.2)', 'vertical-align': 'top'}),
+                
+                html.Div([
+                        dcc.Graph(id='tempgraph', figure=transaction('data/template/')),
+                        dcc.Graph(id='subgraph', figure=transaction('data/G1/'))
+                        ],style={'width': '78%','display':'inline-block', 
+                            'backgroundColor': 'rgba(15, 15, 105, 0.2)',
+                            'text-align':'center', 'color': 'maroon',
+                            'font-weight': 'bold'})
+                    ])
 
 if __name__ == "__main__":
     tab1()

@@ -44,17 +44,21 @@ def getSunburst(path, channel, style):
     #fig1 = px.sunburst(df_new, path=['Source','month', 'Target'], values=df_new['count'], color='month',color_continuous_scale='RdBu')
     #fig2 = px.sunburst(df_new, path=['month','Source', 'Target'], values=df_new['count'], color='month',color_continuous_scale='RdBu')
     if style == 1:
-        return px.sunburst(df_new, path=['Source','month', 'Target'], values=df_new['count'], color='month',color_continuous_scale='RdBu')
-    else:
+        return px.sunburst(df_new, path=['Source','month', 'Target'], values=df_new['count'], color='Source',color_continuous_scale='RdBu')
+    elif style == 2:
         return px.sunburst(df_new, path=['month','Source', 'Target'], values=df_new['count'], color='month',color_continuous_scale='RdBu')
+    else:
+        return px.sunburst(df_new, path=['Target','month', 'Source'], values=df_new['count'], color='Target',color_continuous_scale='RdBu')
 
 def statsPlot(graph, channel, chart):
     if chart == 'heatmap':
         return getHeatmap(graph, channel)
     elif chart == 'sunburst1':
         return getSunburst(graph, channel, 1)
-    else:
+    elif chart == 'sunburst2':
         return getSunburst(graph, channel, 2)
+    else:
+        return getSunburst(graph, channel, 3)
     
     
 if __name__ == "__main__":
