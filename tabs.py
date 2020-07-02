@@ -56,5 +56,15 @@ def tab3():
                             'font-weight': 'bold'})
                     ])
 
+def tab4():
+    return html.Div([
+                dcc.Tabs(id='subtabs', value='subtab-1', children=[
+                    dcc.Tab(label='Transactions', value='subtab-1'),
+                    dcc.Tab(label='Coauthorship', value='subtab-2'),
+                    dcc.Tab(label='Procurement', value='subtab-3'),
+                ]),
+                html.Div(id='subtabs_content')
+            ])
+
 if __name__ == "__main__":
     tab1()

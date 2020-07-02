@@ -37,7 +37,7 @@ def transactions_graph(path):
     df_purchase = pd.read_csv(path+"purchase.csv")
     df_sale = df_sale.rename(columns={"Target": "Item"})
     df_purchase = df_purchase.rename(columns={"Target": "Item", "Source":"Target"})
-    df_procurement = pd.merge(df_sale, df_purchase,  how='left', left_on=['Weight','Time', 'Item'], right_on = ['Weight','Time', 'Item'])
+    df_procurement = pd.merge(df_sale, df_purchase,  how='outer', left_on=['Weight','Time', 'Item'], right_on = ['Weight','Time', 'Item'])
     
     
     df_calls['Time'] = pd.to_datetime(df_calls['Time'])
@@ -46,7 +46,8 @@ def transactions_graph(path):
     df_location['Time'] = pd.to_datetime(df_location['Time'])
     
     df_procurement['Time'] = pd.to_datetime(df_procurement['Time'])
-    
+    wts = df_procurement.Weight.tolist()
+    items = df_procurement.Item.tolist()
     
     persons = df_calls['Source'].tolist()
     persons.extend(df_calls['Target'].tolist())
@@ -130,8 +131,8 @@ def transactions_graph(path):
     fig.add_trace(go.Scatter(x=time_list_t,opacity = 0.8, y= df_travels['Source'], legendgroup="Travel", name='Destination', mode='markers', marker_symbol=11, marker=dict(color=list(map(SetColor, tgt_locations_travel)),size=5)))
     
     fig.add_trace(go.Scatter(x = time_procurement, y = yp, opacity = 0.8,legendgroup="Procurement", name='Procurement', line=dict(color='plum', width=5)))
-    fig.add_trace(go.Scatter(x=df_procurement['Time'], y= df_procurement['Source'],opacity = 0.5, legendgroup="Procurement", name='Seller', mode='markers', marker_symbol=100, marker=dict(color=list(map(SetColor, locations_proc)),size=5)))
-    fig.add_trace(go.Scatter(x=df_procurement['Time'], y= df_procurement['Target'],opacity = 0.5, legendgroup="Procurement", name='Buyer', mode='markers', marker_symbol=11, marker=dict(color=list(map(SetColor, locations_proc)),size=5)))
+    fig.add_trace(go.Scatter(x=df_procurement['Time'], y= df_procurement['Source'],opacity = 0.5, legendgroup="Procurement", name='Seller', mode='markers', marker_symbol=100, text = ['Price: {}, Item:{}'.format(w,t) for w,t in zip(wts, items)], marker=dict(color=list(map(SetColor, locations_proc)),size=5)))
+    fig.add_trace(go.Scatter(x=df_procurement['Time'], y= df_procurement['Target'],opacity = 0.5, legendgroup="Procurement", name='Buyer', mode='markers', marker_symbol=11, text = ['Price: {}, Item:{}'.format(w,t) for w,t in zip(wts, items)], marker=dict(color=list(map(SetColor, locations_proc)),size=5)))
     
     
     fig.update_layout(
