@@ -73,12 +73,37 @@ def tab2_updates(graph_value, channel, charts):
 @app.callback([Output('tempgraph', 'figure'),
                Output('subgraph', 'figure')],
               [Input(component_id='graph_name_match', component_property='value'),
-               Input(component_id='chart_name_match', component_property='value')])
-
-def tab3_updates(graph_value, charts):
+               Input(component_id='chart_name_match', component_property='value'),
+               Input('reorder_nodes_template', 'n_clicks'),
+               Input('reorder_nodes_subgraph', 'n_clicks')],
+               [State('nodes_order_template', 'value'),
+               State('nodes_order_subgraph', 'value')])
+def tab3_updates(graph_value, charts, btn1, btn2, temp_order, sub_order):
     fig1 = getGraph('data/template/', charts)
     fig2 = getGraph(graph_value, charts)
-    return fig1, fig2
+    if charts!='transactions':
+        return fig1, fig2
+    #Handling only for transactions
+    ctx = dash.callback_context
+    if not ctx.triggered:
+        return fig1, fig2
+    else:
+        persons1, persons2 = [], []
+        if temp_order!=None:
+            persons1 = [int(s) for s in temp_order.split(',')]
+            fig1.update_layout(
+                yaxis = dict(
+                        type = 'category',
+                        categoryarray= persons1
+                        ))
+        if sub_order!=None:
+            persons2 = [int(s) for s in sub_order.split(',')]
+            fig2.update_layout(
+                yaxis = dict(
+                        type = 'category',
+                        categoryarray= persons2
+                        ))
+        return fig1, fig2
 
 @app.callback(Output('subtabs_content', 'children'),
               [Input('subtabs', 'value')])
@@ -106,16 +131,33 @@ def update_nodes(n_clicks, value):
         return str(persons)
 
 @app.callback(Output('large_transactions', 'figure'),
-              [Input('fetchTransactions', 'n_clicks')],
-              [State('out_seed', 'value')])
-def fetch_transactions(n_clicks, value):
-    if n_clicks!=None:
-        seeds = [int(s) for s in value.split(',')]
-        getTransactions(seeds)
-        print('updating graph')
-        return transactions_graph_large()
+              [Input('fetchTransactions', 'n_clicks'),
+               Input('reorder_nodes', 'n_clicks')],
+              [State('out_seed', 'value'),
+               State('nodes_order', 'value'),])
+def fetch_transactions(btn1, btn2, out_seeds, nodes_order):
+    ctx = dash.callback_context
+    if not ctx.triggered:
+        print('Initial')
+        return transactions_graph_large([])
     else:
-        return transactions_graph_large()
+        button_id = ctx.triggered[0]['prop_id'].split('.')[0]
+        print(button_id)
+        if button_id == 'fetchTransactions':
+            seeds = [int(s) for s in out_seeds.split(',')]
+            getTransactions(seeds)
+            print('updating graph')
+            return transactions_graph_large(seeds)
+        elif button_id == 'reorder_nodes':
+            persons = [int(s) for s in nodes_order.split(',')]
+            print(persons)
+            fig = transactions_graph_large([])
+            fig.update_layout(
+                    yaxis = dict(
+                            type = 'category',
+                            categoryarray= persons
+                            ))
+            return fig
 
 @app.callback(Output('node', 'options'),
               [Input('nodetype', 'value')])

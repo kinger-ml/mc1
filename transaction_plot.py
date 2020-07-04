@@ -119,21 +119,56 @@ def transactions_graph(path):
     
     fig = go.Figure()
     fig.add_trace(go.Scatter(x = tim_calls, y = ys_calls, opacity = 0.5,legendgroup="Calls", name='Calls', line=dict(color='red', width=1)))
-    fig.add_trace(go.Scatter(x=df_calls['Time'], y= df_calls['Source'],opacity = 0.5, legendgroup="Calls", name='Source', mode='markers', marker_symbol=100, marker=dict(color=list(map(SetColor, src_locations_calls)),size=5)))
-    fig.add_trace(go.Scatter(x=df_calls['Time'], y= df_calls['Target'],opacity = 0.5, legendgroup="Calls", name='Target', mode='markers', marker_symbol=11, marker=dict(color=list(map(SetColor, tgt_locations_calls)),size=5)))
+    fig.add_trace(go.Scatter(x=df_calls['Time'], y= df_calls['Source'],opacity = 0.5, legendgroup="Calls", name='Source', mode='markers', marker_symbol=100, marker=dict(color=list(map(SetColor, src_locations_calls)),size=6)))
+    fig.add_trace(go.Scatter(x=df_calls['Time'], y= df_calls['Target'],opacity = 0.5, legendgroup="Calls", name='Target', mode='markers', marker_symbol=11, marker=dict(color=list(map(SetColor, tgt_locations_calls)),size=6)))
     
     fig.add_trace(go.Scatter(x = tim_emails, y = ys_emails,opacity = 0.5, legendgroup="Emails", name='Emails', line=dict(color='green', width=1)))
-    fig.add_trace(go.Scatter(x=df_emails['Time'],opacity = 0.5, y= df_emails['Source'], legendgroup="Emails", name='Source', mode='markers', marker_symbol=100, marker=dict(color=list(map(SetColor, src_locations_emails)),size=5)))
-    fig.add_trace(go.Scatter(x=df_emails['Time'],opacity = 0.5, y= df_emails['Target'], legendgroup="Emails", name='Target', mode='markers', marker_symbol=11, marker=dict(color=list(map(SetColor, tgt_locations_emails)),size=5)))
+    fig.add_trace(go.Scatter(x=df_emails['Time'],opacity = 0.5, y= df_emails['Source'], legendgroup="Emails", name='Source', mode='markers', marker_symbol=100, marker=dict(color=list(map(SetColor, src_locations_emails)),size=6)))
+    fig.add_trace(go.Scatter(x=df_emails['Time'],opacity = 0.5, y= df_emails['Target'], legendgroup="Emails", name='Target', mode='markers', marker_symbol=11, marker=dict(color=list(map(SetColor, tgt_locations_emails)),size=6)))
     
     fig.add_trace(go.Scatter(x = tim_travel, y = yt,opacity = 0.5, legendgroup="Travel", name='Travel', line=dict(color='blue', width=3)))
-    fig.add_trace(go.Scatter(x=df_travels['Time'],opacity = 0.8, y= df_travels['Source'], legendgroup="Travel", name='Source', mode='markers', marker_symbol=0, marker=dict(color=list(map(SetColor, src_locations_travel)),size=5)))
-    fig.add_trace(go.Scatter(x=time_list_t,opacity = 0.8, y= df_travels['Source'], legendgroup="Travel", name='Destination', mode='markers', marker_symbol=11, marker=dict(color=list(map(SetColor, tgt_locations_travel)),size=5)))
+    fig.add_trace(go.Scatter(x=df_travels['Time'],opacity = 0.8, y= df_travels['Source'], legendgroup="Travel", name='Source', mode='markers', marker_symbol=0, marker=dict(color=list(map(SetColor, src_locations_travel)),size=7)))
+    fig.add_trace(go.Scatter(x=time_list_t,opacity = 0.8, y= df_travels['Source'], legendgroup="Travel", name='Destination', mode='markers', marker_symbol=11, marker=dict(color=list(map(SetColor, tgt_locations_travel)),size=7)))
     
     fig.add_trace(go.Scatter(x = time_procurement, y = yp, opacity = 0.8,legendgroup="Procurement", name='Procurement', line=dict(color='plum', width=5)))
     fig.add_trace(go.Scatter(x=df_procurement['Time'], y= df_procurement['Source'],opacity = 0.5, legendgroup="Procurement", name='Seller', mode='markers', marker_symbol=100, text = ['Price: {}, Item:{}'.format(w,t) for w,t in zip(wts, items)], marker=dict(color=list(map(SetColor, locations_proc)),size=5)))
     fig.add_trace(go.Scatter(x=df_procurement['Time'], y= df_procurement['Target'],opacity = 0.5, legendgroup="Procurement", name='Buyer', mode='markers', marker_symbol=11, text = ['Price: {}, Item:{}'.format(w,t) for w,t in zip(wts, items)], marker=dict(color=list(map(SetColor, locations_proc)),size=5)))
     
+    #Add legends for countries
+    fig.add_trace(go.Scatter(x=[None], y=[None], legendgroup = 'Countries',name='Country 0', mode = 'markers', showlegend=True, marker=dict(size=6, color='#636EFA')))
+    fig.add_trace(go.Scatter(x=[None], y=[None], legendgroup = 'Countries',name='Country 1', mode = 'markers', showlegend=True, marker=dict(size=6, color='#EF553B')))
+    fig.add_trace(go.Scatter(x=[None], y=[None], legendgroup = 'Countries',name='Country 2', mode = 'markers', showlegend=True, marker=dict(size=6, color='#00CC96')))
+    fig.add_trace(go.Scatter(x=[None], y=[None], legendgroup = 'Countries1',name='Country 3', mode = 'markers', showlegend=True, marker=dict(size=6, color='#AB63FA')))
+    fig.add_trace(go.Scatter(x=[None], y=[None], legendgroup = 'Countries1',name='Country 4', mode = 'markers', showlegend=True, marker=dict(size=6, color='#19D3F3')))
+    fig.add_trace(go.Scatter(x=[None], y=[None], legendgroup = 'Countries1',name='Country 5', mode = 'markers', showlegend=True, marker=dict(size=6, color='#AA0DFE')))
+    fig.add_trace(go.Scatter(x=[None], y=[None], legendgroup = 'Countries2',name='Not Known', mode = 'markers', showlegend=True, marker=dict(size=6, color='black')))
+    
+    fig.add_layout_image(
+        dict(
+            source="assets/Tu_kaiserslautern.png",
+            xref="paper",
+            yref="paper",
+            x=1,
+            y=1.05,
+            sizex=0.16,
+            sizey=0.16,
+            xanchor="right",
+            yanchor="bottom",
+            opacity=0.8)
+        )
+    fig.add_layout_image(
+        dict(
+            source="assets/via.jpeg",
+            xref="paper",
+            yref="paper",
+            x=0.8,
+            y=1.05,
+            sizex=0.16,
+            sizey=0.16,
+            xanchor="right",
+            yanchor="bottom",
+            opacity = 0.8)
+        )
     
     fig.update_layout(
             legend_orientation="h",

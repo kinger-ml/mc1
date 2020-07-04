@@ -71,6 +71,8 @@ def getTransactions(persons):
     print('calls stored')
     getProcurements(persons)
     print('Procurement Stored')
+    getTravel(persons)
+    print('Travel Stored')
     
 def getRelatedPeople(seed):
     persons = []
@@ -96,7 +98,7 @@ def getRelatedPeople(seed):
         for item in seed:
             persons = list(filter((item).__ne__, persons))
     c = Counter(persons)
-    result = c.most_common(100)
+    result = c.most_common(30)
     p = [r[0] for r in result]
     persons = []
     persons.extend(seed)
@@ -123,5 +125,7 @@ if __name__ == "__main__":
     t2 = time.clock()
     print(t2-t1)
     """
-    persons = [550287, 512397, 635665, 640254, 524464, 571682, 602794, 537976, 570672, 601595, 653288, 561347, 557816, 578507, 483622, 631903, 554368, 463273, 613859, 508192, 613916, 599483, 529585, 527004, 480601, 487003, 647035, 488473, 496276, 637482, 650911, 606000, 534946, 605676, 544915, 596646, 476189, 498136, 549335, 635766, 623415, 504745, 482001, 560630, 500716, 520138, 554256, 622052, 581357, 640435, 552643, 564629]
-    getTravel(persons)
+    p1 = [600971]
+    p2 = [611692]
+    p3 = [554368]
+    p1 = getTravel(p1)

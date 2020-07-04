@@ -167,5 +167,23 @@ def tab3_left():
                     value='transactions'
                     ),
                 
-                ],style={'width': '96%', 'height': '800px', 'display':'inline-block', 
+                ],style={'width': '96%', 'height': '900px', 'display':'inline-block', 
                     'backgroundColor': 'rgba(105, 105, 105, 0.9)'})    
+                
+def graph1_nodesorder():
+    return html.Div([
+            html.H6(children='Template Nodes Order', style={'width': '18%','display':'inline-block'}),
+            dcc.Input(id='nodes_order_template', type='text', style={'display':'inline-block','width': '68%'}),
+            html.Button('Reorder Nodes', id='reorder_nodes_template', 
+                style={'backgroundColor': 'rgba(200, 200, 210, 0.8)',
+                       'width': '12%','display':'inline-block', 'text-align':'center'}),
+            ])
+def graph2_nodesorder():
+    return html.Div([
+            html.H6(children='Subgraph Nodes Order', style={'width': '18%','display':'inline-block'}),
+            dcc.Input(id='nodes_order_subgraph', type='text', style={'display':'inline-block','width': '68%'}),
+            html.Button('Reorder Nodes', id='reorder_nodes_subgraph', 
+                style={'backgroundColor': 'rgba(200, 200, 210, 0.8)',
+                       'width': '12%','display':'inline-block', 'text-align':'center'}),
+            ])
+    

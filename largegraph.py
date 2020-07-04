@@ -11,7 +11,7 @@ import plotly.graph_objects as go
 import datetime
 def add_time(dt, duration):
     return (dt+ datetime.timedelta(0,86400*int(duration)))
-def transactions_graph_large():
+def transactions_graph_large(seeds):
     df_calls = pd.read_csv("data/large/processed/calls.csv")
     df_emails = pd.read_csv("data/large/processed/emails.csv")
     df_procurement = pd.read_csv("data/large/processed/procurement.csv")
@@ -24,6 +24,7 @@ def transactions_graph_large():
     
     wts = df_procurement.Weight.tolist()
     items = df_procurement.Item.tolist()
+
     persons = df_calls['Source'].tolist()
     persons.extend(df_calls['Target'].tolist())
     
@@ -33,7 +34,13 @@ def transactions_graph_large():
     persons.extend(df_procurement['Source'].tolist())
     persons.extend(df_procurement['Target'].tolist())
     
-    persons.sort(key=Counter(persons).get, reverse=False)
+    persons.sort(key=Counter(persons).get, reverse=True)
+    for item in seeds:
+        persons = list(filter((item).__ne__, persons))
+    p = []
+    p.extend(seeds)
+    p.extend(persons)
+    persons = p
     
     tim_calls, ys_calls = [], []
     tim_emails, ys_emails = [], []
@@ -98,7 +105,7 @@ def transactions_graph_large():
         xaxis = dict(
             side='top'
         ),
-        height=800
+        height=1000
     )
     return fig
 

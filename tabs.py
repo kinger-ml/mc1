@@ -8,7 +8,7 @@ import dash_html_components as html
 import dash_core_components as dcc
 from transaction_plot import transactions_graph
 from assets.html_components import div_transactions, div_coauthors, div_demographics
-from assets.html_components import div_statistics, tab3_left
+from assets.html_components import div_statistics, tab3_left, graph1_nodesorder, graph2_nodesorder
 from coauthors_plot import coauthors_plot
 from stats_plot import statsPlot
 from demographics_plot import demographics_spent, demographics_received
@@ -44,13 +44,15 @@ def tab3():
     return html.Div([
                 html.Div([
                         tab3_left()
-                        ],style={'width': '22%', 'height': '800px', 'display':'inline-block', 
+                        ],style={'width': '21%', 'height': '800px', 'display':'inline-block', 
                     'backgroundColor': 'rgba(105, 105, 105, 0.2)', 'vertical-align': 'top'}),
                 
                 html.Div([
+                        graph1_nodesorder(),
+                        graph2_nodesorder(),
                         dcc.Graph(id='tempgraph', figure=transaction('data/template/')),
                         dcc.Graph(id='subgraph', figure=transaction('data/G1/'))
-                        ],style={'width': '78%','display':'inline-block', 
+                        ],style={'width': '79%','display':'inline-block', 
                             'backgroundColor': 'rgba(15, 15, 105, 0.2)',
                             'text-align':'center', 'color': 'maroon',
                             'font-weight': 'bold'})

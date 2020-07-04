@@ -12,19 +12,26 @@ from dash_table import DataTable
 def subtab1():
     seed = '600971, 611692, 540660, 609913, 470085, 484189, 612711, 602794, 554368'
     return html.Div([
-                html.H5('Enter Person Node ID(s)', style={'width': '18%','display':'inline-block'}),
+                html.H5('Enter Person Node ID(s)', style={'width': '15%','display':'inline-block'}),
                 dcc.Input(id='inp_seed', type='text', value = seed,
-                          style={'width': '40%','display':'inline-block'}),
+                          style={'width': '70%','display':'inline-block'}),
                           
                 html.Button('Get Related ID`s', id='fetchNodes', 
                             style={'backgroundColor': 'rgba(200, 200, 210, 0.8)',
-                                   'width': '13%','display':'inline-block', 'text-align':'center'}),
-                html.H6(children='Related nodes are:'),
-                dcc.Input(id='out_seed', type='text', value = seed, style={'width': '75%'}),
+                                   'width': '15%','display':'inline-block', 'text-align':'center'}),
+                html.Div([]),            
+                html.H6(children='Related nodes', style={'width': '10%','display':'inline-block'}),
+                dcc.Input(id='out_seed', type='text', value = seed, style={'display':'inline-block','width': '75%'}),
                 html.Button('Fetch Transactions', id='fetchTransactions', 
                             style={'backgroundColor': 'rgba(200, 200, 210, 0.8)',
                                    'width': '15%','display':'inline-block', 'text-align':'center'}),
-                dcc.Graph(id='large_transactions', figure = transactions_graph_large())
+                html.Div([]),            
+                html.H6(children='Nodes Order', style={'width': '10%','display':'inline-block'}),
+                dcc.Input(id='nodes_order', type='text', style={'display':'inline-block','width': '75%'}),
+                html.Button('Reorder Nodes', id='reorder_nodes', 
+                            style={'backgroundColor': 'rgba(200, 200, 210, 0.8)',
+                                   'width': '15%','display':'inline-block', 'text-align':'center'}),
+                dcc.Graph(id='large_transactions', figure = transactions_graph_large(seed))
             ])
 
 def subtab2():
